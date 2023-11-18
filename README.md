@@ -17,7 +17,7 @@ TRREB Sign-on Autofill is a open-sourced software plugin for the Chrome browser 
 We developed this software to help Toronto Realtors reclaim time from your busy days so that you can spend time making meaningful connections with your clients. Check us out at https://real-assist.digital.
 
 ## How it works
-![how_it_works](how_it_works.gif)
+![how_it_works](Tutorial/how_it_works.gif)
 
 The Extension helps simplify your login process to 4 easy steps. It can't get sweeter than that!
 
@@ -35,12 +35,16 @@ Ready to powerup your realtor experience? Follow the following steps to install 
 1. Download from GitHub:
 Visit the GitHub repository and locate the folder of the desired Chrome extension. Click on the green "Code" button and select "Download ZIP" to save the folder to your local machine. Unzip the download.
 
+![download_gif](Tutorial/steps_download.gif)
+
 2. Locate the Lines for User ID and PIN:
 Search for the following lines of code in the background.js file:
 ```javascript
 getElementByXpath(`//*[@id="clareity"]`).innerHTML = "your userID"; // EDIT this line prior to use
 getElementByXpath(`//*[@id="pin"]`).innerHTML = "your user PIN"; // EDIT this line prior to use
 ```
+
+![edit_gif](Tutorial/steps_edit_file.gif)
 
 3. Edit and Save:
 Modify "your userID" and "your user PIN" to include the actual user ID and PIN values you want to use for authentication within the extension. For example:
@@ -56,14 +60,18 @@ Open Google Chrome and navigate to the browser's menu (three dots on the top rig
 5. Load Unpacked Extension:
 Once in the Extensions manager, ensure the "Developer mode" toggle in the top right corner is switched on. Click on "Load unpacked" and navigate to the downloaded folder's location on your computer. Select the folder and click "Open" to load the extension into Chrome.
 
+![extension_install_gif](Tutorial/steps_installation.gif)
+
 6. Pin to Toolbar:
 After loading the unpacked extension, you'll find its icon added to the Extensions manager. To pin it to the toolbar for easy access, locate the extension icon within the Extensions manager, then click on the extension's pin icon (often an image of a pin or the extension logo). This action will place the extension icon in your Chrome toolbar for quick access whenever needed.
+
+![extension_pin_gif](Tutorial/steps_pinning.gif)
 
 Enjoy Your New Extension:
 Your extension is now readily accessible from the Chrome toolbar. Click on the icon whenever you want to use its functionality.
 
 ## Terms of use & Security
-This software is designed for offline and private use. It does not implement additional security measures to safeguard user credentials, such as PINs or userIDs, which are stored unprotected on the user's device. Similar to other confidential documents, exercise caution in sharing or storing this software. When sharing the program with others, only distribute it using the official link to the project. Users are responsible for the protection and safekeeping of their sensitive information while using this software.
+This software is designed for private use. It does not implement additional security measures to safeguard user credentials, such as PINs or userIDs, which are stored unprotected on the user's device. Similar to other confidential documents, exercise caution in sharing or storing this software. When sharing the program with others, only distribute it using the official link to the project. Users are responsible for the protection and safekeeping of their sensitive information while using this software.
 
 Please read [the license](LICENSE) for more.
 
@@ -84,13 +92,15 @@ We're thrilled to offer you a one-on-one help session tailored to your needs! Wh
 
 👉 How to Book Your Session 👈
 
-Scheduling your session is quick and easy! Simply click [link] to book your preferred time slot. Our friendly team will be eagerly waiting to assist you!
+Scheduling your session is quick and easy! Simply click [here](https://cal.com/rundarealassist) to book your preferred time slot. Our friendly team will be eagerly waiting to assist you!
 
 🌟 Your Success is Our Priority! 🌟
 
 Join us for a productive and enlightening help session. Let's work together to overcome obstacles and pave the way for your success!
 
-🌐 [Booking Link] 🌐
+🌐 [Booking Links](https://cal.com/rundarealassist) 🌐
+- https://cal.com/rundarealassist
+- https://cal.com/albertrealassist
 
 Feel free to reach out if you have any questions before booking. We're here to help!
 
@@ -99,5 +109,6 @@ Warm regards,
 The Real Assist Team
 
 Email: [info@real-assist.digital](mailto:info@real-assist.digital)
+
 
 

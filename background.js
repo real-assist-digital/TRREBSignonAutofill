@@ -2,7 +2,7 @@ function ephemeralContextInputLogin() {
   function getElementByXpath(path) {
 	  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 	}
-  fetch('https://counterapi.com/api/dev.real-assist.digital/view/autofill?trackOnly');
+  fetch('https://counterapi.com/api/real-assist.digital/view/trreb_login_autofill_v1?trackOnly');
   var auth=prompt("Please enter the authenticator password.","");
   getElementByXpath(`//*[@id="loginbtn"]`).focus();
   getElementByXpath(`//*[@id="clareity"]`).innerHTML = "your userID";     // EDIT this line prior to use
