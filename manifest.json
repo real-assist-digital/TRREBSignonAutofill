@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "TRREB Autofill",
+  "description": "Sign on easily to TRREB",
+  "version": "0.0.0.1",
+  "permissions" : [
+      "storage",
+      "tabs",
+      "activeTab",
+      "scripting",
+      "identity"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker":"background.js"
+	},
+  "action":{
+    "default_title": "TRREB Sign On Autofill"
+  },  
+  "commands": {
+    "Autofill": {
+      "suggested_key": {
+        "windows": "Ctrl+L",
+        "mac": "Command+L"
+      },
+      "description": "Shortcut to trigger autocomplete on the login page."
+    }
+  }
+}
